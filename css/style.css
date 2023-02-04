@@ -8,12 +8,39 @@
 /* основний колір фону #E5E5E5 */
 /* вторинний колір фону #FFFFFF */
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+img {
+display: block;
+}
+
 /* BODY */
 
 body {
     font-family: 'Roboto', sans-serif;
     color: #434455;
     background-color: #E5E5E5;
+}
+
+.container {
+    width: 100%;
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+    outline: 2px solid brown;
 }
 
 .list {
@@ -47,7 +74,10 @@ body {
 }
 /* ----------------------------- HEADER ------------------------- */
 
-/* .header {} */
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 
 /* logo */
 .header-navigation {
@@ -109,6 +139,8 @@ color: #404BBF
 
 .hero {
     background-color: #2E2F42;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .hero-title {
@@ -116,6 +148,7 @@ color: #404BBF
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: var(--hero-title-color, #FFFFFF);
+    margin-bottom: 48px;
 }
 
 .hero-button {
@@ -139,7 +172,10 @@ color: #404BBF
 
 /* .values-title {} */
 
-/* .values-list {} */
+.values-list {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 /* .values-item {} */
 
@@ -159,13 +195,17 @@ color: #404BBF
 }
 /* ----------------------------- Section DOING - 3 -----------------------------*/
 
-/* .doing {} */
+.doing {
+    padding-top: 0;
+    padding-bottom: 120px;
+}
 
 .doing-title {
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: var(--main-color-title, #2E2F42);
+    margin-bottom: 72px;
 }
     
 /* .doing-list {}  */
@@ -176,6 +216,8 @@ color: #404BBF
 
 .team {
     background: #F4F4FD;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .team-title {
@@ -183,6 +225,7 @@ color: #404BBF
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: var(--main-color-title, #2E2F42);
+    margin-bottom: 72px;
 }
 
 /* .team-list {} */
@@ -207,7 +250,9 @@ color: #404BBF
 /* ----------------------------- FOOTER ----------------------------- */
 
 .footer {
-    background-color: #2E2F42;;
+    background-color: #2E2F42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer-navigation {
@@ -217,6 +262,7 @@ color: #404BBF
     line-height: 1.33;
     color: var(--accent-color, #4D5AE5);
     text-decoration: none;
+    margin-bottom: 16px;
 }
 
 .footer-navigation-link {
@@ -240,11 +286,16 @@ color: #E7E9FC;
 /* ----------------------------- Section -----------------------------*/
 
 /* ----------------------------- FILTERS -----------------------------*/
-/* .filters {} */
+.filters {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
 
 /* .filters-title {} */
 
-/* .filters-list {} */
+.filters-list {
+    margin-bottom: 72px;
+}
 
 /* .filters-item {} */
 
