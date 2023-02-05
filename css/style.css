@@ -32,7 +32,7 @@ display: block;
 body {
     font-family: 'Roboto', sans-serif;
     color: #434455;
-    background-color: #E5E5E5;
+    background-color: #fff;
 }
 
 .container {
@@ -193,18 +193,21 @@ color: #404BBF
 
   /* -----------------------------Section VALUES - 2 ----------------------------- */
 
-/* .values {} */
+.values {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 /* .values-title {} */
 
 .values-list {
-    padding-top: 120px;
-    padding-bottom: 120px;
     display: flex;
     gap: 24px;
 }
 
-/* .values-item {} */
+.values-item {
+    max-width: 264px;
+}
 
 .values-subtitle {
     font-weight: 500;
@@ -273,6 +276,7 @@ color: #404BBF
 .team-item-wrap {
     padding-top: 32px;
     padding-bottom: 32px;
+    text-align: center;
  }
 
 .team-subtitle {
@@ -380,8 +384,10 @@ color: #404BBF
 .finger-item {
     background-color: #fff;
     width: calc((100% - 48px) / 3);
+    border-right: 1px solid #fce7e7;
     border-bottom: 1px solid #fce7e7;
-      }
+    border-left: 1px solid #fce7e7;
+    }
 
 .finger-item-wrap {
     padding-top: 32px;
