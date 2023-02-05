@@ -40,7 +40,7 @@ body {
     max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
-    outline: 2px solid brown;
+    /* outline: 2px solid brown; */
 }
 
 .list {
@@ -92,6 +92,8 @@ body {
 .header-logo {
         font-family: 'Raleway', sans-serif;
         font-weight: 800;
+        font-size: 18px;
+        line-height: 1.33;
         color: var(--accent-color, #4D5AE5);
         text-decoration: none;
         }
@@ -164,7 +166,9 @@ color: #404BBF
     margin-bottom: 48px;
     max-width: 524px;
     text-align: center;
-    }
+    display: block;
+    margin: 0 auto 48px;
+    } 
 
 .hero-button {
     min-width: 169px;
@@ -178,6 +182,8 @@ color: #404BBF
     background-color: var(--accent-color, #4D5AE5);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;   
+    display: block;
+    margin: 0 auto;
     }
 
 .hero-button:is(:hover, :focus) {
@@ -260,7 +266,14 @@ color: #404BBF
     gap: 24px;
         }
 
-.team-item {}
+.team-item {
+    width: calc((100% - 72px) / 4);
+}
+
+.team-item-wrap {
+    padding-top: 32px;
+    padding-bottom: 32px;
+ }
 
 .team-subtitle {
     font-weight: 500;
@@ -327,11 +340,11 @@ color: #404BBF
 
 .filters-list {
     margin-bottom: 72px;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     display: flex;
     gap: 24px;
-    text-align:center;
-}
+    justify-content: center;
+    }
 
 /* .filters-item {} */
 
@@ -357,14 +370,24 @@ color: #404BBF
 /* ----------------------------- FINGERS -----------------------------*/
 
 .finger-list {
-    border: 1px solid tomato;
+    /* border: 1px solid tomato; */
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
    }
 
 .finger-item {
     background-color: #fff;
+    width: calc((100% - 48px) / 3);
+    border: 1px solid #fce7e7;
       }
+
+.finger-item-wrap {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+}
 
 .finger-subtitle {
     font-weight: 500;
